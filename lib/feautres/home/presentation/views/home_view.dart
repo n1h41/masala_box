@@ -56,25 +56,21 @@ class HomeView extends HookConsumerWidget {
         child: TabBar(
           dividerColor: Colors.black,
           controller: tabController,
+          overlayColor: MaterialStateProperty.all(Colors.lightBlueAccent),
           indicator: const BoxDecoration(
             border: Border(
               left: BorderSide(color: Colors.black),
               right: BorderSide(color: Colors.black),
             ),
           ),
-          labelColor: Colors.black,
+          labelColor: Colors.blue,
           unselectedLabelColor: Colors.grey,
           tabs: const [
             Tab(
               text: 'Tab 1',
-              // child: Text(
-              //   'Tab 1',
-              //   style: TextStyle(color: Colors.black),
-              // ),
             ),
             Tab(
               text: 'Tab 2',
-              
             ),
           ],
         ),
