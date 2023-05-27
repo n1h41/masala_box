@@ -22,13 +22,13 @@ Follow the steps below to get started with the project:
 1. Clone the repository:
 
    ```pwsh
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/n1h41/masala_box.git
    ```
 
 2. Change into the project directory:
 
    ```pwsh
-   cd your-repo
+   cd masala_box
    ```
 
 3. Install dependencies:

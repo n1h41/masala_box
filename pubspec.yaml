@@ -39,3 +39,4 @@ flutter:
 
 scripts:
   watch: dart run build_runner watch --delete-conflicting-outputs
+  build: flutter build apk --split-per-abi

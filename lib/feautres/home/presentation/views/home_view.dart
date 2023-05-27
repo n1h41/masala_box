@@ -52,15 +52,23 @@ class HomeView extends HookConsumerWidget {
         ],
       ),
       bottomNavigationBar: Container(
-        decoration: BoxDecoration(border: Border.all(color: Colors.black)),
+        decoration: BoxDecoration(
+          border: Border.all(
+            color: Colors.grey.withOpacity(0.9),
+          ),
+        ),
         child: TabBar(
           dividerColor: Colors.black,
           controller: tabController,
           overlayColor: MaterialStateProperty.all(Colors.lightBlueAccent),
-          indicator: const BoxDecoration(
+          indicator: BoxDecoration(
             border: Border(
-              left: BorderSide(color: Colors.black),
-              right: BorderSide(color: Colors.black),
+              left: BorderSide(
+                color: Colors.grey.withOpacity(0.9),
+              ),
+              right: BorderSide(
+                color: Colors.grey.withOpacity(0.9),
+              ),
             ),
           ),
           labelColor: Colors.blue,

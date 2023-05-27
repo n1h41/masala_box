@@ -23,12 +23,14 @@ void main() {
 
   test(
     'when the getrestaurant method is called, it should return a list of restaurant entities',
-    () {
-/*       when(mockHomeLocalDataSource.readLocalDataSource()).thenReturn(
-        readFixture('test/fixtures/data.json'),
+    () async {
+      when(mockHomeLocalDataSource.readLocalDataSource()).thenAnswer(
+        (realInvocation) => Future.value(
+          readFixture('test/fixtures/data.json'),
+        ),
       );
-      final result = repo.getRestaurants();
+      final result = await repo.getRestaurants();
       expect(result, isA<Right<Failure, List<RestaurantEntity>>>());
- */    },
+    },
   );
 }
